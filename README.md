@@ -1,5 +1,6 @@
+- Clone this repo
+- Use the create-env.sh or update-env.sh for setting up the conda/python environment.
 - Clone eegsynth: https://github.com/eegsynth/eegsynth
-- Use the requirements.txt from the repo to install deps
 - Execute install.sh in bin directory
 - Install redis-server
 - Execute buffer module (https://github.com/eegsynth/eegsynth/blob/master/doc/tutorial1.md, 1st step)
@@ -8,7 +9,7 @@
 
  
 Note:for qt 6.3 series you have to edit depricatedvalues in plotsignal.py:
--GraphicsWindow is now GraphicsLayoutWidget
--import QtWidgets for QtApplications.
+- GraphicsWindow is now GraphicsLayoutWidget
+- import QtWidgets for QtApplications.
 
 *Mac users must run terminal via Rosetta.*
