@@ -1,0 +1,19 @@
+redis
+configparser
+numpy
+scipy
+mido
+pyserial
+python-osc # for Python >= 3.6
+pyqtgraph
+matplotlib
+fuzzywuzzy[speedup]
+nilearn
+sklearn
+neurokit
+paho-mqtt
+pyqtgraph
+pyqt5 # for Python 3
+scipy
+termcolor
+colorama
