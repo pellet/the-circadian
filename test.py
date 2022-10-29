@@ -19,10 +19,6 @@ def get_raw_signal(signal_df, sampling_freq, ch_names):
 
     raw = mne.io.RawArray(data, signal_info)
 
-    raw.notch_filter(50, notch_widths=3)
-
-    raw.filter(0.1, 120)
-    
     return raw
 
 
