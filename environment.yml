@@ -1,0 +1,12 @@
+name: the-circadian
+channels:
+    - defaults
+dependencies:
+  - python=3.9
+  - redis-py
+  - portaudio
+  - pyqt
+  - cvxopt
+  - pip
+  - pip:
+    - -r requirements.txt

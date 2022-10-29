@@ -13,7 +13,6 @@ sklearn
 neurokit
 paho-mqtt
 pyqtgraph
-pyqt5 # for Python 3
 scipy
 termcolor
 colorama
