@@ -11,10 +11,14 @@ python $EEGSYNTH_MODULE/buffer/buffer.py -i $INIFILES/buffer.ini &
 sleep $SLEEP_TIME
 
 # Execute openbci module (https://github.com/eegsynth/eegsynth/blob/master/doc/tutorial3.md)
-cd $EEGSYNTH_MODULE/openbci2ft
-./openbci2ft.sh -i ../../../$INIFILES/openbci2ft.ini &
+# cd $EEGSYNTH_MODULE/openbci2ft
+# ./openbci2ft.sh -i ../../../$INIFILES/openbci2ft.ini &
+# sleep $SLEEP_TIME
+# cd ../../..
+
+# Stream EEG data over network via LSL from the OpenBCI GUI. 
+python $EEGSYNTH_MODULE/lsl2ft/lsl2ft.py -i $INIFILES/lsl2ft.ini &
 sleep $SLEEP_TIME
-cd ../../..
 
 # Execute playback
 # python $EEGSYNTH_MODULE/playbacksignal/playbacksignal.py -i $INIFILES/playbacksignal.ini &

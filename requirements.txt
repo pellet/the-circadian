@@ -16,3 +16,4 @@ pyqtgraph==0.12.*
 scipy
 termcolor
 colorama
+pylsl
