@@ -33,7 +33,7 @@ python $EEGSYNTH_MODULE/preprocessing/preprocessing.py -i $INIFILES/preprocessin
 sleep $SLEEP_TIME
 
 # Execute nightlight neurofeedback
-PYTHONPATH=$PYTHONPATH:eegsynth/lib MNE_USE_NUMBA=false python ./src/test.py
+PYTHONPATH=$PYTHONPATH:eegsynth/lib MNE_USE_NUMBA=false python ./src/the-circadian.py
 sleep $SLEEP_TIME
 
 # Wait for processes to finish

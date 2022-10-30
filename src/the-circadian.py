@@ -52,9 +52,13 @@ while True:
     signal_data = raw_array, sfreq, ch_names
 
     power_spectrum = extract.get_power_relative(signal_data)
-    value = power_spectrum['C3']['theta']['relative']
 
-    values.append(value)
+    values.append(power_spectrum['C3']['alpha']['relative'])
+    values.append(power_spectrum['C4']['alpha']['relative'])
+    values.append(power_spectrum['P3']['alpha']['relative'])
+    values.append(power_spectrum['P4']['alpha']['relative'])
+    values.append(power_spectrum['O1']['alpha']['relative'])
+    values.append(power_spectrum['O2']['alpha']['relative'])
     values = values[-10:]
     mean_value = np.mean(values)
     mean_value = (mean_value - 0.06) / (0.12 - 0.06)
