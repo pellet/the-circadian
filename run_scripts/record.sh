@@ -11,11 +11,21 @@ python $EEGSYNTH_MODULE/buffer/buffer.py -i $INIFILES/buffer.ini &
 sleep $SLEEP_TIME
 
 # Execute openbci module (https://github.com/eegsynth/eegsynth/blob/master/doc/tutorial3.md)
-$EEGSYNTH_MODULE/openbci2ft/openbci2ft.sh -i $INIFILES/openbci2ft.ini &
+cd $EEGSYNTH_MODULE/openbci2ft
+./openbci2ft.sh -i ../../../$INIFILES/openbci2ft.ini &
 sleep $SLEEP_TIME
+cd ../../..
+
+# Execute playback
+# python $EEGSYNTH_MODULE/playbacksignal/playbacksignal.py -i $INIFILES/playbacksignal.ini &
+# sleep $SLEEP_TIME
 
 # Execute plotter module (https://github.com/eegsynth/eegsynth/blob/master/doc/tutorial1.md, 3rd step)
 python $EEGSYNTH_MODULE/plotsignal/plotsignal.py -i $INIFILES/plotsignal.ini &
+sleep $SLEEP_TIME
+
+# Execute 
+python $EEGSYNTH_MODULE/recordsignal/recordsignal.py -i $INIFILES/recordsignal.ini &
 sleep $SLEEP_TIME
 
 # Execute preprocessing module
