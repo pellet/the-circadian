@@ -22,8 +22,10 @@ sleep $SLEEP_TIME
 python preprocessing/preprocessing.py -i $INIFILES/preprocessing.ini &
 sleep $SLEEP_TIME
 
-# Execute nightlight test
-cd ../..
-PYTHONPATH=$PYTHONPATH:./eegsynth/lib MNE_USE_NUMBA=false
-python src/test.py &
+# Execute nightlight neurofeedback
+cd src
+PYTHONPATH=$PYTHONPATH:../eegsynth/lib MNE_USE_NUMBA=false python ./test.py
 sleep $SLEEP_TIME
+
+# Wait for processes to finish
+wait
