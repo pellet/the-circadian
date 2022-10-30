@@ -1,0 +1,3 @@
+[submodule "eegsynth"]
+	path = eegsynth
+	url = git@github.com:eegsynth/eegsynth.git

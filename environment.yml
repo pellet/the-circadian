@@ -8,6 +8,5 @@ dependencies:
   - portaudio
   - pyqt<6
   - cvxopt
-  - pip
   - pip:
     - -r requirements.txt

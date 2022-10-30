@@ -1,0 +1,31 @@
+name: Tests
+
+on:
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ '**' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    
+    strategy:
+      matrix:
+        python-version: ["3.9"]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Conda environment with Micromamba
+      uses: mamba-org/provision-with-micromamba@main
+      with:
+        environment-file: false
+
+    - name: Python ${{ matrix.python-version }}
+      shell: bash -l {0}
+      run: |
+        alias conda='micromamba'
+        cd install_scripts
+        ./create-env.sh
+        

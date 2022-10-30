@@ -1,0 +1,1 @@
+conda env create -n the-circadian -f ../environment.yml
