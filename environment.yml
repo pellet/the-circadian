@@ -6,7 +6,7 @@ dependencies:
   - redis
   - redis-py
   - portaudio
-  - pyqt
+  - pyqt<6
   - cvxopt
   - pip
   - pip:

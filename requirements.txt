@@ -12,7 +12,7 @@ nilearn
 sklearn
 neurokit
 paho-mqtt
-pyqtgraph
+pyqtgraph==0.12.*
 scipy
 termcolor
 colorama
