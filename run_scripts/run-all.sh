@@ -23,7 +23,7 @@ python preprocessing/preprocessing.py -i $INIFILES/preprocessing.ini &
 sleep $SLEEP_TIME
 
 # Execute nightlight neurofeedback
-cd src
+cd ../../src
 PYTHONPATH=$PYTHONPATH:../eegsynth/lib MNE_USE_NUMBA=false python ./test.py
 sleep $SLEEP_TIME
 
