@@ -25,8 +25,8 @@ python $EEGSYNTH_MODULE/plotsignal/plotsignal.py -i $INIFILES/plotsignal.ini &
 sleep $SLEEP_TIME
 
 # Execute 
-python $EEGSYNTH_MODULE/recordsignal/recordsignal.py -i $INIFILES/recordsignal.ini &
-sleep $SLEEP_TIME
+# python $EEGSYNTH_MODULE/recordsignal/recordsignal.py -i $INIFILES/recordsignal.ini &
+# sleep $SLEEP_TIME
 
 # Execute preprocessing module
 python $EEGSYNTH_MODULE/preprocessing/preprocessing.py -i $INIFILES/preprocessing.ini &
