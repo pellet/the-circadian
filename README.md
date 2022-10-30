@@ -3,6 +3,8 @@
 - Fetch eegsynch submodule
 - Execute eegsynth/bin/install.sh
 - Install redis-server
-- Use run-all.sh in run_scripts/ to start all the modules/services
+- Choose a patch/script to run in run_scripts/
+- playback.sh plays back some previously recorded eeg data
+- record.sh records eeg data as an edf file.
 
 *Mac users must run terminal via Rosetta.*
