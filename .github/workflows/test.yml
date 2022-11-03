@@ -26,6 +26,6 @@ jobs:
       shell: bash -l {0}
       run: |
         alias conda='micromamba'
-        cd install_scripts
+        cd install
         ./create-env.sh
         
