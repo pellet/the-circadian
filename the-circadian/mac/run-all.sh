@@ -8,13 +8,15 @@
 
 # Stream EEG data over network via LSL from the OpenBCI GUI, 
 # NOTE: not using openbci2ft due to experiencing issues.
-./lsl2ft.sh
-
+# ./lsl2ft.sh
 # Execute playback
-# ./playbacksignal.sh
+./playbacksignal.sh
+
+# Execute recording to edf file
+# ./recordsignal.sh
 
 echo Waiting for a few seconds ...
-sleep 10
+sleep 5
 
 ./preprocessing.sh
 
@@ -23,9 +25,6 @@ sleep 5
 
 # Execute plotter module (https://github.com/eegsynth/eegsynth/blob/master/doc/tutorial1.md, 3rd step)
 ./plotsignal.sh
-
-# Execute recording to edf file
-# ./recordsignal.sh
 
 # Execute nightlight neurofeedback
 ./the-circadian.sh

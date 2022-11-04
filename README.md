@@ -1,10 +1,8 @@
 - Clone this repo
-- Use create-env.sh or update-env.sh in install_scripts/ for setting up the conda/python environment
+- Use create-env.sh or update-env.sh in install/ for setting up the conda/python environment
 - Fetch eegsynch submodule
-- Execute eegsynth/bin/install.sh
+- Execute eegsynth/bin/install.sh - *Mac users must run terminal/install via Rosetta.*
 - Install redis-server
-- Choose a patch/script to run in run_scripts/
-- playback.sh plays back some previously recorded eeg data
-- record.sh records eeg data as an edf file.
-
-*Mac users must run terminal via Rosetta.*
+- Use run-all.sh or an individual module script in circadian/mac/
+- playbacksignal.sh inputs some previously recorded eeg data
+- recordsignal.sh records eeg data input from LSL to an edf file.
